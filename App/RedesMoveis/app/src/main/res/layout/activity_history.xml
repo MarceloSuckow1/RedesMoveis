@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" >
+
+    <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Histórico do dia"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="1"
+    >
+
+        <TextView
+                android:id="@+id/textData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Data"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/textHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Hora"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/textEntrada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Entrada/Saída"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:paddingTop="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
